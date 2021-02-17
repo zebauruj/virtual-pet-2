@@ -7,6 +7,7 @@ var foodObj;
 function preload(){
    dog1=loadImage("images/dogImg.png");
    dog2=loadImage("images/dogImg1.png");
+   milkimg=loadImage("images/Milk.png"):
   }
 
 //Function to set initial environment
@@ -64,7 +65,9 @@ function readStock(data){
 //function to update food stock and last fed time
 function feedDog(){
   dog.addImage(dog2);
-
+   milk=createSprite(130,450,10,10);
+  milk.addImage(milkimg);
+  milk.scale=0.15;
   foodObj.updateFoodStock(foodObj.getFoodStock()-1);
   database.ref('/').update({
     Food:foodObj.getFoodStock(),
