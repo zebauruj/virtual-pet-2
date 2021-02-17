@@ -65,9 +65,9 @@ function readStock(data){
 //function to update food stock and last fed time
 function feedDog(){
   dog.addImage(dog2);
-   milk=createSprite(130,450,10,10);
+   milk=createSprite(130,320,10,10);
   milk.addImage(milkimg);
-  milk.scale=0.15;
+  milk.scale=0.1;
   foodObj.updateFoodStock(foodObj.getFoodStock()-1);
   database.ref('/').update({
     Food:foodObj.getFoodStock(),
