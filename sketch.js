@@ -7,7 +7,7 @@ var foodObj;
 function preload(){
    dog1=loadImage("images/dogImg.png");
    dog2=loadImage("images/dogImg1.png");
-   milkimg=loadImage("images/Milk.png"):
+   milkimg=loadImage("images/Milk.png");
   }
 
 //Function to set initial environment
